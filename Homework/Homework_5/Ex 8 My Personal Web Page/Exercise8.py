@@ -1,0 +1,20 @@
+from pathlib import Path
+print("Enter your name:")
+name = input()
+print("Describe yourself:")
+describe = input()
+with open('my_page.html','w') as file:
+    file.write("<html>\n")
+    file.write("<head>\n")
+    file.write("<title>My Personal Web Page</title>\n")
+    file.write("</head>\n")
+    file.write("<body>\n")
+    file.write("\t<center>\n")
+    file.write("\t\t<h1>"+str(name)+"</h1>\n")
+    file.write("\t</center>\n")
+    file.write("\t<hr />\n")
+    file.write("\t"+str(describe)+"\n")
+    file.write("\t<hr />\n")
+    file.write("</body>\n")
+    file.write("</html>\n")
+
